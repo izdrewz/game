@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Quest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Nunito:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky-junk" aria-hidden="true">
+    <span class="plane">✈️🔥</span>
+    <span class="evil-cat">🐈‍⬛</span>
+    <span class="troll">🧌</span>
+    <span class="knight">🛡️</span>
+    <span class="jester">🃏</span>
+    <span class="tiny-dragon">🐉</span>
+    <span class="haunted-heart">💘</span>
+  </div>
+
+  <main class="game-shell">
+    <section class="hero">
+      <p class="eyebrow">Two-player face-reading chaos</p>
+      <h1>Face Quest</h1>
+      <p class="intro">
+        Draw a subject, place, action and wild card. The performer reads the cursed scene in secret,
+        makes the face they would actually make, and the other player guesses the cards.
+      </p>
+    </section>
+
+    <section class="tableau" aria-label="Current cards">
+      <article class="card subject-card">
+        <p class="card-label">Subject</p>
+        <h2 id="subjectText">Very annoying kid</h2>
+      </article>
+      <article class="card place-card">
+        <p class="card-label">Place</p>
+        <h2 id="placeText">Waitrose</h2>
+      </article>
+      <article class="card action-card">
+        <p class="card-label">Action</p>
+        <h2 id="actionText">falls over dramatically</h2>
+      </article>
+      <article class="card wild-card">
+        <p class="card-label">Wild</p>
+        <h2 id="wildText">you are running from the police</h2>
+      </article>
+    </section>
+
+    <section class="scene-panel">
+      <p class="panel-label">Secret scene</p>
+      <p id="sceneText" class="scene-text">
+        A very annoying kid in Waitrose falls over dramatically, but you are running from the police.
+      </p>
+      <p id="guessModeText" class="guess-mode" hidden>
+        Cards hidden. Make the face. No explaining, no miming the whole thing, no mercy.
+      </p>
+    </section>
+
+    <section class="controls" aria-label="Game controls">
+      <button id="dealButton" type="button">Deal new scene</button>
+      <button id="hideButton" type="button">Hide for guessing</button>
+      <button id="revealButton" type="button">Reveal for scoring</button>
+    </section>
+
+    <section class="scoreboard" aria-label="Score keeper">
+      <div>
+        <p class="score-label">Player 1</p>
+        <p id="playerOneScore" class="score">0</p>
+        <button class="score-button" data-player="one" data-points="1" type="button">+1</button>
+      </div>
+      <div>
+        <p class="score-label">Player 2</p>
+        <p id="playerTwoScore" class="score">0</p>
+        <button class="score-button" data-player="two" data-points="1" type="button">+1</button>
+      </div>
+      <button id="resetScoreButton" class="reset-button" type="button">Reset scores</button>
+    </section>
+
+    <section class="rules">
+      <h2>How to score</h2>
+      <p>
+        Give 1 point for each pile guessed: subject, place, action and wild. Add another point when
+        the guesser explains the performer’s exact reaction logic, even if the words are not perfect.
+      </p>
+      <p class="tiny-note">
+        Hidden court gossip: there are evil cats, burning planes, trolls, knights and jesters lurking in the design.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
