@@ -187,3 +187,36 @@ Task status options after review:
 - If Izzy approves this plan: completed locked.
 - If repo uses placeholders now but needs final art later: completed needs further edits.
 - If Izzy rejects the pose/outfit direction: active, with fixes listed.
+
+## Outfit-class variant previews — rejected / reset
+
+Status: active
+
+Latest feedback:
+Izzy rejected the generated wizard, sorcerer, jester, bard, princess, knight, scribe, ranger, and druid outfit variants. The variants were too bland/boring, did not keep enough of the approved base-girl identity, and the outfit direction was not strong enough.
+
+Do not treat the generated class-variant images as approved assets. They are rejected visual tests only.
+
+Reset rules for next outfit-class variant pass:
+- Use the locked base girl as the identity anchor, not a generic generated character.
+- Keep the face, body, hair identity, scale, and default front pose closer to the approved base.
+- Preserve right-arm tattoo rule only.
+- Use black background for working previews.
+- Do not mark anything final or export-ready until Izzy approves the preview.
+- Stronger silhouettes are needed. The outfits should feel distinct, styled, and game-worthy, not bland default clothing.
+- Keep the cave outfit variants in the academic-adventurer / medieval fantasy direction, but make each class readable.
+- Do not generate large batches that drift. Produce smaller preview batches and check approval before continuing.
+
+Needed class default outfit variants remain:
+- wizard
+- sorcerer
+- jester
+- bard
+- princess
+- knight
+- scribe
+- ranger
+- druid
+
+Next Area 1 action:
+Prepare a corrected outfit direction plan before generating again. The plan should define what makes each class visually readable, then ask Izzy to approve the direction or adjust it before any new image batch is produced.
